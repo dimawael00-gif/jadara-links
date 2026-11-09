@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية جدارة لبناء القدرات</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --gold: #D48532; 
+            --navy: #1B3A5C; 
+            /* تم تغميق الخلفية درجتين لتصبح رمادي مزرق متوسط */
+            --bg-color: #C4D2E0; 
+            --white: #ffffff;
+            --card-bg: rgba(255, 255, 255, 0.95); /* جعل البطاقة أكثر بياضاً لتبرز فوق الخلفية الأغمق */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+
+        body {
+            background-color: var(--bg-color);
+            /* تدرج خفيف جداً لإعطاء عمق للخلفية */
+            background-image: linear-gradient(135deg, #C4D2E0 0%, #A9BCCF 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+            color: var(--navy);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 40px 25px;
+            border-radius: 24px;
+            /* زيادة الظل قليلاً ليتناسب مع الخلفية الأغمق */
+            box-shadow: 0 15px 35px rgba(27, 58, 92, 0.15); 
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+        /* تنسيق اللوجو */
+        .logo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: contain;
+            margin-bottom: 20px;
+            border: 3px solid var(--navy); 
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: all 0.4s ease; 
+        }
+
+        .logo:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 10px 25px rgba(27, 58, 92, 0.2); 
+        }
+
+        h1 { font-size: 22px; font-weight: 700; color: var(--navy); margin-bottom: 10px; }
+
+        .description {
+            font-size: 14px; line-height: 1.8; color: #4B5563; margin-bottom: 25px; padding: 0 10px; font-weight: 600;
+        }
+
+        /* صندوق المعلومات */
+        .info-box {
+            background: #F8FAFC; /* لون رمادي فاتح جداً */
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 30px;
+            font-size: 13px;
+            color: var(--navy);
+            display: flex; flex-direction: column; gap: 8px; font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .info-box:hover {
+            background: #FFFFFF;
+            border-color: #CBD5E1;
+        }
+
+        .info-box span { color: var(--gold); font-weight: 700; }
+
+        /* ✨ المربعات الكحلية */
+        .link-btn {
+            display: flex; align-items: center; justify-content: flex-start;
+            background: var(--navy); 
+            color: var(--white); 
+            text-decoration: none;
+            padding: 16px 20px; margin-bottom: 12px;
+            border-radius: 14px; font-weight: 700; font-size: 15px;
+            transition: all 0.3s ease; 
+            box-shadow: 0 4px 10px rgba(27, 58, 92, 0.2); 
+            border: 1px solid transparent;
+        }
+
+        /* ✨ الأيقونات البيضاء */
+        .link-btn i {
+            margin-left: 15px; font-size: 22px; width: 25px; text-align: center; transition: all 0.3s ease;
+            color: var(--white); 
+        }
+
+        /* تأثير التمرير */
+        .link-btn:hover {
+            transform: translateY(-2px); 
+            box-shadow: 0 8px 20px rgba(27, 58, 92, 0.3);
+            background: #244A6F; 
+            border-color: var(--gold); 
+        }
+        
+        .link-btn:hover i { 
+            transform: scale(1.1); 
+            color: var(--gold); 
+        }
+
+        .footer { margin-top: 30px; color: #64748B; font-size: 12px; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://res.cloudinary.com/dui2c44p6/image/upload/v1794220602/ql3ywzbmtiayprmmd3lh.jpg" alt="أكاديمية جدارة" class="logo">
+        
+        <h1>أكاديمية جدارة لبناء القدرات</h1>
+        
+        <p class="description">
+            أكاديمية فلسطينية رائدة في مجال التدريب، مرخصين رسمياً من وزارة الاقتصاد. ننطلق لنقدم خدماتنا التدريبية لتلبي متطلبات سوق العمل بجدارة.
+        </p>
+
+        <div class="info-box">
+            <div><span>البريد:</span> Jadara2026Academy2026</div>
+            <div><span>رقم الترخيص:</span> 565045200</div>
+        </div>
+
+        <a href="https://wa.me/972566131416" class="link-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+
+        <a href="https://www.instagram.com/jadara.academy" class="link-btn" target="_blank">
+            <i class="fab fa-instagram"></i> حساب الإنستغرام
+        </a>
+        
+        <a href="https://www.facebook.com/share/19SfMg7rEc/" class="link-btn" target="_blank">
+            <i class="fab fa-facebook"></i> صفحة الفيسبوك
+        </a>
+
+        <div class="footer">
+            &copy; 2024 Jadara Academy. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
